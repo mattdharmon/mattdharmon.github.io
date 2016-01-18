@@ -5,7 +5,8 @@ var projectData = [
     id: 1,
     name: "Udacity Projects",
     image_link: "public/images/udacity_portfolio.png",
-    link: "https://mattdharmon.github.io/UdacityP1FrontEndProjectPortfolio/",
+    website_link: "https://mattdharmon.github.io/UdacityP1FrontEndProjectPortfolio/",
+    github_link: "https://github.com/mattdharmon/UdacityP1FrontEndProjectPortfolio",
     details: "Projects I have done for Udacity while earning a Nanodegree."
   },
 ];
@@ -23,7 +24,8 @@ var Project = React.createClass({
             <p>{this.props.details}</p>
           </div>
           <div className="card-action">
-            <a href={this.props.link}>Github</a>
+            <a href={this.props.github_link}>Github</a>
+            <a href={this.props.website_link}>Website</a>
           </div>
         </div>
       </div>
