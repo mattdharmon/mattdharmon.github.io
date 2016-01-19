@@ -1,9 +1,8 @@
 var gulp = require('gulp');
-var uglify = require('gulp-uglify');
 var minify = require('gulp-concat');
-var react = require('gulp-react');
 var reactify = require('reactify');
 var browserify = require('gulp-browserify');
+var rename = require('gulp-rename');
 var browserSync = require('browser-sync').create();
 
 var path = {
@@ -28,10 +27,10 @@ gulp.task('build', function() {
       // Make React available externally for dev tools
       bundler.require('react');
     })
-    .pipe(react())
     .pipe(minify(path.MINIFIED_OUT))
-    .pipe(uglify(path.MINIFIED_OUT))
-    .pipe(gulp.dest(path.DEST_DIST));
+    .pipe(rename(path.MINIFIED_OUT))
+    .pipe(gulp.dest(path.DEST_DIST))
+    ;
 });
 
 gulp.task('watch', function() {

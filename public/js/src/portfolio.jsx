@@ -1,15 +1,6 @@
 var React = require("react");
 var ReactDOM = require("react-dom");
-var projectData = [
-  {
-    id: 1,
-    name: "Udacity Projects",
-    image_link: "public/images/udacity_portfolio.png",
-    website_link: "https://mattdharmon.github.io/UdacityP1FrontEndProjectPortfolio/",
-    github_link: "https://github.com/mattdharmon/UdacityP1FrontEndProjectPortfolio",
-    details: "Projects I have done for Udacity while earning a Nanodegree."
-  },
-];
+var projectData = require("./resources/data/portfolioData");
 
 var Project = React.createClass({
   render: function() {
@@ -24,8 +15,8 @@ var Project = React.createClass({
             <p>{this.props.details}</p>
           </div>
           <div className="card-action">
-            <a href={this.props.github_link}>Github</a>
             <a href={this.props.website_link}>Website</a>
+            <a href={this.props.repository_link}>Github</a>
           </div>
         </div>
       </div>
@@ -37,7 +28,13 @@ var Projects = React.createClass({
   render: function() {
     var projectNodes = this.props.data.map(function(project) {
       return (
-        <Project key={project.id} name={project.name} image_link={project.image_link} details={project.details} link={project.link} />
+        <Project
+          key={project.id}
+          name={project.name}
+          image_link={project.image_link}
+          details={project.details}
+          website_link={project.website_link}
+          repository_link={project.repository_link} />
       );
     });
     return (
@@ -59,12 +56,7 @@ var ProjectSection = React.createClass({
   }
 });
 
-var loc = window.location.pathname;
-var dir = loc.substring(0, loc.lastIndexOf('/'));
-// var url = "public/resources/data/projectData.json";
-var url = "public/resources/data/projectData.json";
-
 ReactDOM.render(
-  <ProjectSection data={projectData}/>,
+  <ProjectSection data={projectData} />,
   document.getElementById('projectSection')
 );
