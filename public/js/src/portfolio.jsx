@@ -58,5 +58,5 @@ var ProjectSection = React.createClass({
 
 ReactDOM.render(
   <ProjectSection data={projectData} />,
-  document.getElementById('projectSection')
+  document.getElementById('contentSection')
 );
