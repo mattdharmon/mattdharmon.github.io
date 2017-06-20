@@ -1,27 +1,14 @@
 {
-  "presets": ["react", "es2015"],
+  "presets": [
+    ["env", { "modules": false }],
+    "stage-2"
+  ],
+  "plugins": ["transform-runtime", "transform-object-rest-spread"],
+  "comments": false,
   "env": {
-    "development": {
-      "plugins": [
-        ["transform-object-rest-spread"],
-        ["transform-react-display-name"],
-        ["react-transform", {
-          "transforms": [{
-            "transform": "react-transform-hmr",
-            "imports": ["react"],
-            "locals": ["module"]
-          }, {
-            "transform": "react-transform-catch-errors",
-            "imports": ["react", "redbox-react"]
-          }]
-        }]
-      ]
-    },
-    "production": {
-      "plugins": [
-        ["transform-object-rest-spread"],
-        ["transform-react-display-name"]
-      ]
+    "test": {
+      "presets": ["env", "stage-2"],
+      "plugins": [ "istanbul" ]
     }
   }
 }
