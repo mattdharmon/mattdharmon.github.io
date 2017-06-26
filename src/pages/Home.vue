@@ -10,7 +10,7 @@
           </v-card-text>
         </v-card-row>
         <v-list two-line>
-          <v-list-item @click="openPage('https://github.com/mattdharmon') ">
+          <v-list-item @click="openPage('https://github.com/mattdharmon')">
             <v-list-tile>
               <v-list-tile-action>
                 <icon name="github" scale="2"></icon>
@@ -32,7 +32,7 @@
             </v-list-tile>
           </v-list-item>
           <v-divider inset></v-divider>
-          <v-list-item>
+          <v-list-item class="experience--item">
             <v-list-tile>
               <v-list-tile-action>
                 <icon name="map" scale="2"></icon>
