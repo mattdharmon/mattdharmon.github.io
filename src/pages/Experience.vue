@@ -10,8 +10,8 @@
           </v-card-text>
         </v-card-row>
         <v-list two-line>
-          <v-list-item @click="openPage('https://github.com/mattdharmon')" class="experience--item">
-            <v-list-tile>
+          <v-list-item>
+            <v-list-tile class="experience--item">
               <v-list-tile-action>
                 <v-icon class="black--text" large>label</v-icon>
               </v-list-tile-action>
@@ -21,8 +21,8 @@
             </v-list-tile>
           </v-list-item>
           <v-divider inset></v-divider>
-          <v-list-item @click="openPage('https://www.linkedin.com/in/mattdharmon')" class="experience--item">
-            <v-list-tile>
+          <v-list-item>
+            <v-list-tile class="experience--item">
               <v-list-tile-action>
                 <v-icon large class="black--text">event</v-icon>
               </v-list-tile-action>
@@ -32,8 +32,8 @@
             </v-list-tile>
           </v-list-item>
           <v-divider inset></v-divider>
-          <v-list-item class="experience--item">
-            <v-list-tile>
+          <v-list-item>
+            <v-list-tile class="experience--item">
               <v-list-tile-action>
                 <icon name="map" scale="2"></icon>
               </v-list-tile-action>
@@ -43,8 +43,8 @@
             </v-list-tile>
           </v-list-item>
           <v-divider inset></v-divider>
-          <v-list-item class="experience--item">
-            <v-list-tile>
+          <v-list-item>
+            <v-list-tile class="experience--item">
               <v-list-tile-action>
                 <v-icon large class="black--text">assignment</v-icon>
               </v-list-tile-action>
@@ -53,8 +53,8 @@
               </v-list-tile-content>
             </v-list-tile>
           </v-list-item>
-          <v-list-item v-for="(value, key, index) in selected.responsibilities" :key="index" class="experience--item">
-            <v-list-tile>
+          <v-list-item v-for="(value, key, index) in selected.responsibilities" :key="index">
+            <v-list-tile class="experience--item">
               <v-list-tile-action>
               </v-list-tile-action>
               <v-list-tile-content>

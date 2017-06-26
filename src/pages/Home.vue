@@ -53,7 +53,7 @@
               </v-list-tile-content>
             </v-list-tile>
           </v-list-item>
-          <v-list-item v-for="item in list.slice(0, 2)" :key="item.id">
+          <v-list-item v-for="item in list.slice(0, 2)" :key="item.id" @click="goTo(item.id)">
             <v-list-tile>
               <v-list-tile-action>
               </v-list-tile-action>
@@ -93,6 +93,9 @@
       },
       openPage (url) {
         window.open(url, '_blank')
+      },
+      goTo (id) {
+        this.$router.push({ name: 'experience', params: { id: id } })
       }
     }
   }
