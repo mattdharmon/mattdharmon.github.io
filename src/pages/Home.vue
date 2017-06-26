@@ -32,8 +32,8 @@
             </v-list-tile>
           </v-list-item>
           <v-divider inset></v-divider>
-          <v-list-item class="experience--item">
-            <v-list-tile>
+          <v-list-item>
+            <v-list-tile class="experience--item">
               <v-list-tile-action>
                 <icon name="map" scale="2"></icon>
               </v-list-tile-action>
