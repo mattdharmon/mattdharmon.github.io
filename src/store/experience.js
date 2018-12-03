@@ -5,12 +5,25 @@ export const namespaced = true
 export const state = {
   list: [
     {
-      id: 1,
+      id: 7,
+      company: 'Gilson Inc.',
+      title: 'E-Business Application Developer',
+      location: 'Madison, WI',
+      start_date: moment('06/2018', 'MM/YYYY').format('MMM [of] YYYY'),
+      end_date: 'Current',
+      responsibilities: [
+        'Update and maintain the E-Commerce platform Magento with new and updated content.',
+        'Work with an international team using Jira to update the the E-Commerce platform.',
+        'Help mantain the server instances on Microsoft Azure '
+      ]
+    },
+    {
+      id: 6,
       company: 'Hardin Design and Development',
       title: 'Web Developer',
       location: 'Madison, WI',
       start_date: moment('10/2015', 'MM/YYYY').format('MMM [of] YYYY'),
-      end_date: 'Current',
+      end_date: moment('05/2018').format('MMM [of] YYYY'),
       responsibilities: [
         'Develop, maintain, and implement enterprise software written in PHP and JavaScript.',
         'Architect and implement custom software/applications using various programming languages across multiple platforms and operating systems.',
@@ -23,7 +36,7 @@ export const state = {
       ]
     },
     {
-      id: 2,
+      id: 5,
       company: 'InfoSec Institute',
       title: 'Web Developer',
       location: 'Madison, WI',
@@ -38,7 +51,7 @@ export const state = {
       ]
     },
     {
-      id: 3,
+      id: 4,
       company: 'Johnson Health Tech',
       title: 'Web Developer',
       location: 'Cottage Grove, WI',
@@ -52,6 +65,41 @@ export const state = {
         'Created and developed a central API for the company\'s e-commerce site using Python.',
         'Used both SQL databases (MySQL, PostgreSQL) and NoSQL databases (MongoDB, Redis) to support our sites.',
         'Wrote technical documentation for other developers and non developers.'
+      ]
+    },
+    {
+      id: 3,
+      company: 'HSA Home Warranty',
+      title: 'Web Developer',
+      location: 'Cottage Grove, WI',
+      start_date: moment('08/2012', 'MM/YYYY').format('MMM [of] YYYY'),
+      end_date: moment('01/2013', 'MM/YYYY').format('MMM [of] YYYYY'),
+      responsibilities: [
+        'Helped maintain websites using .NET technologies, including ASP.NET, VB.NET, and some minor C#.',
+        'Provide IT help desk support when needed.'
+      ]
+    },
+    {
+      id: 2,
+      company: 'Robert Half Technologies',
+      title: 'Consultant',
+      location: 'Madison, WI',
+      start_date: moment('07/2012', 'MM/YYYY').format('MMM [of] YYYY'),
+      end_date: moment('05/2013', 'MM/YYYY').format('MMM [of] YYYYY'),
+      responsibilities: [
+        'Worked on contracts for web development/IT that were provided by Robert Half Technology.'
+      ]
+    },
+    {
+      id: 1,
+      company: 'United States Geological Survey (USGS)',
+      title: 'WWW Development Technician',
+      location: 'Madison, WI',
+      start_date: moment('01/2011', 'MM/YYYY').format('MMM [of] YYYY'),
+      end_date: moment('12/2012', 'MM/YYYY').format('MMM [of] YYYYY'),
+      responsibilities: [
+        'Developed web applications using Java, PHP(Yii Framework), and helped design a MSSQL database for these applications.',
+        'Provided IT help desk support when needed.'
       ]
     }
   ]
@@ -71,7 +119,7 @@ export const actions = {
 
 export const getters = {
   list (state) {
-    return state.list
+    return state.list.reverse()
   },
   selected (state) {
     return state.selected
