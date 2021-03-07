@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <v-parallax height="100%" src="three_sisters.jpg">
+    <v-parallax height="100%" src="three_sisters.JPG">
       <v-main>
         <v-container
           :style="{ background: $vuetify.theme.themes['dark'].background }"
