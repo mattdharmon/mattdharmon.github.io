@@ -60,7 +60,7 @@
       <v-row justify="center">
         <v-col cols="12" sm="8">
           <v-card>
-            <v-img src="valley.jpg" height="200px"></v-img>
+            <v-img src="valley.JPG" height="200px"></v-img>
             <v-card-title class="red darken-1">
               <span class="headline white--text">Projects</span>
               <v-spacer></v-spacer>
