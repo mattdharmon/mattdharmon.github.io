@@ -60,7 +60,7 @@
       <v-row justify="center">
         <v-col cols="12" sm="8">
           <v-card>
-            <v-img src="valley.JPG" height="200px"></v-img>
+            <!-- <v-img src="valley.JPG" height="200px"></v-img> -->
             <v-card-title class="red darken-1">
               <span class="headline white--text">Projects</span>
               <v-spacer></v-spacer>
@@ -97,7 +97,7 @@
               <v-col col="8">
                 <v-sheet v-if="model != null" tile>
                   <v-card>
-                    <v-img height="400" :src="projects[model].image"></v-img>
+                    <!-- <v-img height="400" :src="projects[model].image"></v-img> -->
                     <v-card-title class="teal darken-1">
                       <span class="headline white--text">{{
                         projects[model].title
@@ -135,7 +135,7 @@
       <v-row justify="center">
         <v-col cols="12" sm="8">
           <v-card>
-            <v-img height="200px" src="pond.JPG"> </v-img>
+            <!-- <v-img height="200px" src="pond.JPG"> </v-img> -->
             <v-card-title class="deep-orange darken-1">
               <span class="headline white--text">Experience</span>
               <v-spacer></v-spacer>
@@ -186,7 +186,7 @@
       <v-row justify="center">
         <v-col cols="12" sm="8">
           <v-card class="mx-auto" tile>
-            <v-img height="200px" src="castle.JPG"> </v-img>
+            <!-- <v-img height="200px" src="castle.JPG"> </v-img> -->
             <v-card-title class="purple darken-1">
               <span class="headline white--text"
                 >Education and Certificates</span

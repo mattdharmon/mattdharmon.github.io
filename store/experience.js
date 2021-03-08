@@ -52,7 +52,7 @@ export const state = () => ({
             start_date: moment('10/2015', 'MM/YYYY').format('MMM [of] YYYY'),
             end_date: moment('05/2018', 'MM/YYYY').format('MMM [of] YYYY'),
             icon: 'mdi-office-building',
-            color: 'light-green',
+            color: 'indigo',
             responsibilities: [
                 'Develop, maintain, and implement enterprise software written in PHP and JavaScript.',
                 'Architect and implement custom software/applications using various programming languages across multiple platforms and operating systems.',
