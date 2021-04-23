@@ -119,6 +119,19 @@
                           </v-list-item-title>
                         </v-list-item-content>
                       </v-list-item>
+                      <v-list-item v-if="projects[model].tableau">
+                        <v-list-item-action>
+                          <v-icon>mdi-chart-timeline-variant</v-icon>
+                        </v-list-item-action>
+
+                        <v-list-item-content>
+                          <v-list-item-title>
+                            <a :href="projects[model].tableau">{{
+                              projects[model].tableau
+                            }}</a>
+                          </v-list-item-title>
+                        </v-list-item-content>
+                      </v-list-item>
                     </v-list>
                     <v-divider inset></v-divider>
                     <v-card-text>
