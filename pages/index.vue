@@ -17,11 +17,11 @@
                 </v-list-item-action>
 
                 <v-list-item-content>
-                  <v-list-item-title
-                    ><a href="https://github.com/mattdharmon"
-                      >https://github.com/mattdharmon</a
-                    ></v-list-item-title
-                  >
+                  <v-list-item-title>
+                    <a href="https://github.com/mattdharmon">
+                      https://github.com/mattdharmon
+                    </a>
+                  </v-list-item-title>
                 </v-list-item-content>
               </v-list-item>
 
@@ -33,11 +33,11 @@
                 </v-list-item-action>
 
                 <v-list-item-content>
-                  <v-list-item-title
-                    ><a href="www.linkedin.com/in/mattdharmon"
-                      >www.linkedin.com/in/mattdharmon</a
-                    ></v-list-item-title
-                  >
+                  <v-list-item-title>
+                    <a href="https://www.linkedin.com/in/mattdharmon">
+                      www.linkedin.com/in/mattdharmon
+                    </a>
+                  </v-list-item-title>
                 </v-list-item-content>
               </v-list-item>
 
