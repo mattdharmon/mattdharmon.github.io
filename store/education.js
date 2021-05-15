@@ -4,7 +4,7 @@ export const state = () => ({
         {
             id: 4,
             school: "University of Wisconsin - Whitewater",
-            degree: "B.S. in Computer Science, Minor in Statistics",
+            degree: "B.S. in Computer Science, Minor in Data Science",
             issued_date: moment('09/2019', 'MM/YYYY').format('MMM [of] YYYY'),
             expiration_date: 'In Progress',
         },

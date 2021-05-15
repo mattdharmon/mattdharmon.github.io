@@ -4,7 +4,7 @@
       <v-row justify="center">
         <v-col cols="12" sm="8">
           <v-card>
-            <v-img src="pikes_peak.jpg" height="200px"></v-img>
+            <v-img src="header.jpg" height="200px"></v-img>
             <v-card-title class="cyan darken-1">
               <span class="headline white--text">Matthew Harmon</span>
               <v-spacer></v-spacer>
@@ -66,7 +66,61 @@
               <v-spacer></v-spacer>
             </v-card-title>
 
-            <v-slide-group v-model="model" class="pa-4" show-arrows mandatory>
+          <v-container fluid>
+            <v-row dense>
+            <v-col
+              v-for="project in projects"
+              :key="project.id"
+              :cols="6"
+            >
+            <v-card 
+              class="mx-auto"
+              max-width="500"
+              >
+                <v-img
+                class="white--text align-end"
+                height="200px"
+                :src="project.image"
+                ></v-img>
+                <v-card-title>{{project.title}}</v-card-title>
+                    <v-list>
+                      <v-list-item>
+                        <v-list-item-action>
+                          <v-icon>mdi-github</v-icon>
+                        </v-list-item-action>
+
+                        <v-list-item-content>
+                          <v-list-item-title>
+                            <a :href="project.github">{{
+                              project.github
+                            }}</a>
+                          </v-list-item-title>
+                        </v-list-item-content>
+                      </v-list-item>
+                      <v-list-item v-if="project.tableau">
+                        <v-list-item-action>
+                          <v-icon>mdi-chart-timeline-variant</v-icon>
+                        </v-list-item-action>
+
+                        <v-list-item-content>
+                          <v-list-item-title>
+                            <a :href="project.tableau">{{
+                              project.tableau
+                            }}</a>
+                          </v-list-item-title>
+                        </v-list-item-content>
+                      </v-list-item>
+                    </v-list>
+                    <v-divider inset></v-divider>
+                    <v-card-text>
+                      {{ project.description }}
+                    </v-card-text>
+            </v-card>
+            </v-col>
+            </v-row>
+          </v-container>
+
+            <!-- <v-slide-group v-model="model" class="pa-4" show-arrows mandatory>
               <v-slide-item
                 v-for="project in projects"
                 :key="project.id"
@@ -97,7 +151,7 @@
               <v-col col="8">
                 <v-sheet v-if="model != null" tile>
                   <v-card>
-                    <!-- <v-img height="400" :src="projects[model].image"></v-img> -->
+                    <v-img height="400" :src="projects[model].image"></v-img>
                     <v-card-title class="teal darken-1">
                       <span class="headline white--text">{{
                         projects[model].title
@@ -140,7 +194,7 @@
                   </v-card>
                 </v-sheet>
               </v-col>
-            </v-expand-transition>
+            </v-expand-transition> -->
           </v-card>
         </v-col>
       </v-row>
